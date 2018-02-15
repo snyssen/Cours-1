@@ -79,6 +79,7 @@
             this.mfEditeur.Name = "mfEditeur";
             this.mfEditeur.Size = new System.Drawing.Size(187, 22);
             this.mfEditeur.Text = "Editeur";
+            this.mfEditeur.Click += new System.EventHandler(this.mNonDefini_Click);
             // 
             // mAide
             // 
@@ -107,6 +108,7 @@
             this.MinimizeBox = false;
             this.Name = "FicPrincipal";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ecran principal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FicPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.FicPrincipal_Load);
