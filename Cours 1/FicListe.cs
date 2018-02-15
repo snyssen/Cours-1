@@ -1,0 +1,130 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using System.Runtime.InteropServices;
+
+
+namespace Cours_1
+{
+    public partial class EcranListe : Form
+    {
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        private const int LB_Lire = 0x0199;
+        private const int LB_Ecrire = 0x019A;
+        private string NomFichier = "";
+        public EcranListe()
+        {
+            InitializeComponent();
+        }
+
+        private void Activer(bool lDetail)
+        {
+            lbPersonnes.Enabled = !lDetail;
+            btnOuvrir.Enabled = btnEnregistrer.Enabled = btnAjouter.Enabled = btnSupprimer.Enabled = !lDetail;
+            gbDetail.Enabled = lDetail;
+
+            if (lDetail)
+            {
+                tbNom.Text = "";
+                cbQualite.SelectedIndex = 0;
+                cbQualite.Focus(); // Permet de mettre le clavier sur la box (donc pas besoin de cliquer)
+            }
+            else
+                lbPersonnes.Focus();
+        }
+
+        private void btnConfirmer_Click(object sender, EventArgs e)
+        {
+            int n = lbPersonnes.Items.Add(tbNom.Text + " (" + cbQualite.Text + ")");
+            SendMessage(lbPersonnes.Handle, LB_Ecrire, n, lbPersonnes.Items.Count);
+            Activer(false);
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            Activer(false);
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            Activer(true);
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            int nItem = lbPersonnes.SelectedIndex;
+            if (nItem >= 0)
+            {
+                int n = SendMessage(lbPersonnes.Handle, LB_Lire, nItem, 0);
+                lbPersonnes.Items.RemoveAt(nItem);
+                for (int i = 0; i < lbPersonnes.Items.Count; i++)
+                {
+                    int m = SendMessage(lbPersonnes.Handle, LB_Lire, i, 0); // 0 car on a pas de valeur à mettre
+                    if (m > n)
+                    {
+                        m--;
+                        SendMessage(lbPersonnes.Handle, LB_Ecrire, i, m);
+                    }
+                }
+            }
+            else
+                MessageBox.Show("Aucune personne sélectionnée");
+        }
+
+        private void btnEnregistrer_Click(object sender, EventArgs e)
+        {
+            if (dlgEnregistrer.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter sw = new StreamWriter(dlgEnregistrer.FileName);
+                NomFichier = dlgEnregistrer.FileName;
+                for (int i=0; i<lbPersonnes.Items.Count;i++)
+                {
+                    int n = SendMessage(lbPersonnes.Handle, LB_Lire, i, 0); // 0 car on a pas de valeur à mettre
+                    sw.WriteLine(lbPersonnes.Items[i] + "#" + n);
+                }
+                sw.Close();
+                lblFichier.Text = NomFichier.Substring(NomFichier.LastIndexOf('\\')); // On coupe après le contre-slash
+            }
+        }
+
+        private void btnOuvrir_Click(object sender, EventArgs e)
+        {
+            if (NomFichier != "")
+                dlgOuvrir.FileName = NomFichier;
+            dlgOuvrir.Filter = "Fichier texte|*.txt|Tous fichiers|*.*";
+            if (dlgOuvrir.ShowDialog() == DialogResult.OK)
+            {
+                lbPersonnes.Items.Clear();
+                NomFichier = dlgOuvrir.FileName;
+                StreamReader sr = new StreamReader(NomFichier);
+                string lecture;
+                while((lecture = sr.ReadLine()) != null)
+                {
+                    var tab = lecture.Split('#');
+                    int n = lbPersonnes.Items.Add(tab[0]);
+                    SendMessage(lbPersonnes.Handle, LB_Ecrire, n, int.Parse(tab[1]));
+                }
+                sr.Close();
+                lblFichier.Text = NomFichier.Substring(1 + NomFichier.LastIndexOf('\\'));
+            }
+        }
+
+        private void lbPersonnes_DoubleClick(object sender, EventArgs e)
+        {
+            if (lbPersonnes.SelectedIndex >= 0)
+            {
+                int n = SendMessage(lbPersonnes.Handle, LB_Lire, lbPersonnes.SelectedIndex, 0); // 0 car on a pas de valeur à mettre
+                MessageBox.Show(lbPersonnes.Text + " en position " + (1 + lbPersonnes.SelectedIndex) + " (tri), " + n + " (encodage)");
+                
+            }
+        }
+    }
+}
