@@ -56,5 +56,11 @@ namespace Cours_1
             EcranListe f = new EcranListe();
             f.ShowDialog();
         }
+
+        private void mfEditeur_Click(object sender, EventArgs e)
+        {
+            EcranEditeur f = new EcranEditeur();
+            f.ShowDialog();
+        }
     }
 }

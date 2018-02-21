@@ -79,7 +79,7 @@
             this.mfEditeur.Name = "mfEditeur";
             this.mfEditeur.Size = new System.Drawing.Size(187, 22);
             this.mfEditeur.Text = "Editeur";
-            this.mfEditeur.Click += new System.EventHandler(this.mNonDefini_Click);
+            this.mfEditeur.Click += new System.EventHandler(this.mfEditeur_Click);
             // 
             // mAide
             // 

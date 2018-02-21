@@ -31,9 +31,10 @@ namespace Cours_1
             btnExecuter.Enabled = btnQuitter.Enabled = false;
 
             // Simulation de copie d'un fichier
+            pbPrincipale.Value = 0;
             for (i=1;i<=8;i++)
             {
-                pbPrincipale.Value = 0;
+                pbSecondaire.Value = 0;
                 pas = 5 + 9 * delai.Next(20);
                 for(j=1;j<=20;j++)
                 {
