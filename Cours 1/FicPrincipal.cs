@@ -62,5 +62,11 @@ namespace Cours_1
             EcranEditeur f = new EcranEditeur();
             f.ShowDialog();
         }
+
+        private void mfHorloge_Click(object sender, EventArgs e)
+        {
+            EcranHorloge f = new EcranHorloge();
+            f.ShowDialog();
+        }
     }
 }

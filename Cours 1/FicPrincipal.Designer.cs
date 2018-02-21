@@ -35,6 +35,7 @@
             this.mfEditeur = new System.Windows.Forms.ToolStripMenuItem();
             this.mAide = new System.Windows.Forms.ToolStripMenuItem();
             this.mQuitter = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfHorloge = new System.Windows.Forms.ToolStripMenuItem();
             this.mMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,8 @@
             this.mFenetres.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mfProgression,
             this.mfListe,
-            this.mfEditeur});
+            this.mfEditeur,
+            this.mfHorloge});
             this.mFenetres.Name = "mFenetres";
             this.mFenetres.Size = new System.Drawing.Size(63, 20);
             this.mFenetres.Text = "Fenêtres";
@@ -97,6 +99,13 @@
             this.mQuitter.Text = "Quitter";
             this.mQuitter.Click += new System.EventHandler(this.mQuitter_Click);
             // 
+            // mfHorloge
+            // 
+            this.mfHorloge.Name = "mfHorloge";
+            this.mfHorloge.Size = new System.Drawing.Size(187, 22);
+            this.mfHorloge.Text = "Horloge";
+            this.mfHorloge.Click += new System.EventHandler(this.mfHorloge_Click);
+            // 
             // FicPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,5 +137,6 @@
         private System.Windows.Forms.ToolStripMenuItem mfEditeur;
         private System.Windows.Forms.ToolStripMenuItem mAide;
         private System.Windows.Forms.ToolStripMenuItem mQuitter;
+        private System.Windows.Forms.ToolStripMenuItem mfHorloge;
     }
 }
