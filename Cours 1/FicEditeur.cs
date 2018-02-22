@@ -118,7 +118,7 @@ namespace Cours_1
         {
             System.Drawing.Font PoliceActuelle = rtbTexte.SelectionFont;
             System.Drawing.FontStyle NouvellePolice;
-            NouvellePolice = PoliceActuelle.Style ^ FontStyle.Bold;
+            NouvellePolice = PoliceActuelle.Style ^ FontStyle.Bold; // L'opérateur "^" est un opérateur logique XOR, dans ce cas-ci on active/désactive le bold tout en gardant toutes les autres modifs (italique, gras, etc.) telles qu'elles étaient activées
             rtbTexte.SelectionFont = new Font(PoliceActuelle.FontFamily, PoliceActuelle.Size, NouvellePolice);
         }
 
@@ -151,7 +151,7 @@ namespace Cours_1
             VerifierSauver();
         }
 
-        private void EcranEditeur_Shown(object sender, EventArgs e)
+        private void EcranEditeur_Shown(object sender, EventArgs e) // Evenement déclenché lorsuq ela fenêtre a fini de charger et s'affiche donc à l'écran
         {
             rtbTexte.Focus();
         }

@@ -87,6 +87,12 @@
     <Compile Include="FicProgression.Designer.cs">
       <DependentUpon>FicProgression.cs</DependentUpon>
     </Compile>
+    <Compile Include="FicSpirographe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicSpirographe.Designer.cs">
+      <DependentUpon>FicSpirographe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="A_propos.resx">
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FicProgression.resx">
       <DependentUpon>FicProgression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicSpirographe.resx">
+      <DependentUpon>FicSpirographe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -141,6 +150,114 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\copy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICTrait.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICFond.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doorshut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filenew.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileopen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICBarre.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICCentre.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICDate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICDroit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICFond1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICGauche.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICGras.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICHeure.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICItalic.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICLeft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICMois.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICOuvrir.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICPolice.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICQuitter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICSauver.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICSouligne.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICTrait1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICVider.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VSIcone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WEFloppy.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WELVGrandeIcone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WELVPetiteIcone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WEOrdi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WEPoubelle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WERepertoire.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WERepertoireActif.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WETBApparence.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

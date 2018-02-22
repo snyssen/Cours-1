@@ -33,9 +33,10 @@
             this.mfProgression = new System.Windows.Forms.ToolStripMenuItem();
             this.mfListe = new System.Windows.Forms.ToolStripMenuItem();
             this.mfEditeur = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfHorloge = new System.Windows.Forms.ToolStripMenuItem();
             this.mAide = new System.Windows.Forms.ToolStripMenuItem();
             this.mQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.mfHorloge = new System.Windows.Forms.ToolStripMenuItem();
+            this.mefSpirographe = new System.Windows.Forms.ToolStripMenuItem();
             this.mMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,7 +58,8 @@
             this.mfProgression,
             this.mfListe,
             this.mfEditeur,
-            this.mfHorloge});
+            this.mfHorloge,
+            this.mefSpirographe});
             this.mFenetres.Name = "mFenetres";
             this.mFenetres.Size = new System.Drawing.Size(63, 20);
             this.mFenetres.Text = "Fenêtres";
@@ -83,6 +85,13 @@
             this.mfEditeur.Text = "Editeur";
             this.mfEditeur.Click += new System.EventHandler(this.mfEditeur_Click);
             // 
+            // mfHorloge
+            // 
+            this.mfHorloge.Name = "mfHorloge";
+            this.mfHorloge.Size = new System.Drawing.Size(187, 22);
+            this.mfHorloge.Text = "Horloge";
+            this.mfHorloge.Click += new System.EventHandler(this.mfHorloge_Click);
+            // 
             // mAide
             // 
             this.mAide.Name = "mAide";
@@ -99,12 +108,12 @@
             this.mQuitter.Text = "Quitter";
             this.mQuitter.Click += new System.EventHandler(this.mQuitter_Click);
             // 
-            // mfHorloge
+            // mefSpirographe
             // 
-            this.mfHorloge.Name = "mfHorloge";
-            this.mfHorloge.Size = new System.Drawing.Size(187, 22);
-            this.mfHorloge.Text = "Horloge";
-            this.mfHorloge.Click += new System.EventHandler(this.mfHorloge_Click);
+            this.mefSpirographe.Name = "mefSpirographe";
+            this.mefSpirographe.Size = new System.Drawing.Size(187, 22);
+            this.mefSpirographe.Text = "Spirographe";
+            this.mefSpirographe.Click += new System.EventHandler(this.mefSpirographe_Click);
             // 
             // FicPrincipal
             // 
@@ -138,5 +147,6 @@
         private System.Windows.Forms.ToolStripMenuItem mAide;
         private System.Windows.Forms.ToolStripMenuItem mQuitter;
         private System.Windows.Forms.ToolStripMenuItem mfHorloge;
+        private System.Windows.Forms.ToolStripMenuItem mefSpirographe;
     }
 }

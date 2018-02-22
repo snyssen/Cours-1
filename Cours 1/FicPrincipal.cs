@@ -68,5 +68,11 @@ namespace Cours_1
             EcranHorloge f = new EcranHorloge();
             f.ShowDialog();
         }
+
+        private void mefSpirographe_Click(object sender, EventArgs e)
+        {
+            EcranSpirographe f = new EcranSpirographe();
+            f.ShowDialog();
+        }
     }
 }
