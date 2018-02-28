@@ -74,5 +74,11 @@ namespace Cours_1
             EcranSpirographe f = new EcranSpirographe();
             f.ShowDialog();
         }
+
+        private void mefGraphique_Click(object sender, EventArgs e)
+        {
+            EcranGraphique f = new EcranGraphique();
+            f.ShowDialog();
+        }
     }
 }
