@@ -35,9 +35,12 @@
             this.mfEditeur = new System.Windows.Forms.ToolStripMenuItem();
             this.mfHorloge = new System.Windows.Forms.ToolStripMenuItem();
             this.mefSpirographe = new System.Windows.Forms.ToolStripMenuItem();
+            this.mefGraphique = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfCarnaval = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfClavierSouris = new System.Windows.Forms.ToolStripMenuItem();
             this.mAide = new System.Windows.Forms.ToolStripMenuItem();
             this.mQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.mefGraphique = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfExplorateur = new System.Windows.Forms.ToolStripMenuItem();
             this.mMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +64,10 @@
             this.mfEditeur,
             this.mfHorloge,
             this.mefSpirographe,
-            this.mefGraphique});
+            this.mefGraphique,
+            this.mfCarnaval,
+            this.mfClavierSouris,
+            this.mfExplorateur});
             this.mFenetres.Name = "mFenetres";
             this.mFenetres.Size = new System.Drawing.Size(63, 20);
             this.mFenetres.Text = "Fenêtres";
@@ -101,6 +107,27 @@
             this.mefSpirographe.Text = "Spirographe";
             this.mefSpirographe.Click += new System.EventHandler(this.mefSpirographe_Click);
             // 
+            // mefGraphique
+            // 
+            this.mefGraphique.Name = "mefGraphique";
+            this.mefGraphique.Size = new System.Drawing.Size(187, 22);
+            this.mefGraphique.Text = "Graphique";
+            this.mefGraphique.Click += new System.EventHandler(this.mefGraphique_Click);
+            // 
+            // mfCarnaval
+            // 
+            this.mfCarnaval.Name = "mfCarnaval";
+            this.mfCarnaval.Size = new System.Drawing.Size(187, 22);
+            this.mfCarnaval.Text = "Carnaval";
+            this.mfCarnaval.Click += new System.EventHandler(this.mfCarnaval_Click);
+            // 
+            // mfClavierSouris
+            // 
+            this.mfClavierSouris.Name = "mfClavierSouris";
+            this.mfClavierSouris.Size = new System.Drawing.Size(187, 22);
+            this.mfClavierSouris.Text = "Clavier - Souris";
+            this.mfClavierSouris.Click += new System.EventHandler(this.mfClavierSouris_Click);
+            // 
             // mAide
             // 
             this.mAide.Name = "mAide";
@@ -117,12 +144,12 @@
             this.mQuitter.Text = "Quitter";
             this.mQuitter.Click += new System.EventHandler(this.mQuitter_Click);
             // 
-            // mefGraphique
+            // mfExplorateur
             // 
-            this.mefGraphique.Name = "mefGraphique";
-            this.mefGraphique.Size = new System.Drawing.Size(187, 22);
-            this.mefGraphique.Text = "Graphique";
-            this.mefGraphique.Click += new System.EventHandler(this.mefGraphique_Click);
+            this.mfExplorateur.Name = "mfExplorateur";
+            this.mfExplorateur.Size = new System.Drawing.Size(187, 22);
+            this.mfExplorateur.Text = "Explorateur";
+            this.mfExplorateur.Click += new System.EventHandler(this.mfExplorateur_Click);
             // 
             // FicPrincipal
             // 
@@ -158,5 +185,8 @@
         private System.Windows.Forms.ToolStripMenuItem mfHorloge;
         private System.Windows.Forms.ToolStripMenuItem mefSpirographe;
         private System.Windows.Forms.ToolStripMenuItem mefGraphique;
+        private System.Windows.Forms.ToolStripMenuItem mfCarnaval;
+        private System.Windows.Forms.ToolStripMenuItem mfClavierSouris;
+        private System.Windows.Forms.ToolStripMenuItem mfExplorateur;
     }
 }

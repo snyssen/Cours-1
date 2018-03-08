@@ -57,11 +57,29 @@
     <Compile Include="FicAccueil.Designer.cs">
       <DependentUpon>FicAccueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="FicCarnaval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicCarnaval.Designer.cs">
+      <DependentUpon>FicCarnaval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FicClavierSouris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicClavierSouris.Designer.cs">
+      <DependentUpon>FicClavierSouris.cs</DependentUpon>
+    </Compile>
     <Compile Include="FicEditeur.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FicEditeur.Designer.cs">
       <DependentUpon>FicEditeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FicExplorateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicExplorateur.Designer.cs">
+      <DependentUpon>FicExplorateur.cs</DependentUpon>
     </Compile>
     <Compile Include="FicGraphique.cs">
       <SubType>Form</SubType>
@@ -108,8 +126,17 @@
     <EmbeddedResource Include="FicAccueil.resx">
       <DependentUpon>FicAccueil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FicCarnaval.resx">
+      <DependentUpon>FicCarnaval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicClavierSouris.resx">
+      <DependentUpon>FicClavierSouris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FicEditeur.resx">
       <DependentUpon>FicEditeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicExplorateur.resx">
+      <DependentUpon>FicExplorateur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FicGraphique.resx">
       <DependentUpon>FicGraphique.cs</DependentUpon>
@@ -268,6 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WETBApparence.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WETBApparence1.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

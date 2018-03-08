@@ -80,5 +80,23 @@ namespace Cours_1
             EcranGraphique f = new EcranGraphique();
             f.ShowDialog();
         }
+
+        private void mfCarnaval_Click(object sender, EventArgs e)
+        {
+            EcranCarnaval f = new EcranCarnaval();
+            f.ShowDialog();
+        }
+
+        private void mfClavierSouris_Click(object sender, EventArgs e)
+        {
+            Ecran_Clavier_Souris f = new Ecran_Clavier_Souris();
+            f.ShowDialog();
+        }
+
+        private void mfExplorateur_Click(object sender, EventArgs e)
+        {
+            EcranExplorateur f = new EcranExplorateur();
+            f.ShowDialog();
+        }
     }
 }
