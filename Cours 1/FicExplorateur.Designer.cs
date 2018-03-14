@@ -31,25 +31,25 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EcranExplorateur));
             this.tsCommande = new System.Windows.Forms.ToolStrip();
-            this.ssMessage = new System.Windows.Forms.StatusStrip();
-            this.tvRepertoire = new System.Windows.Forms.TreeView();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.lvFichier = new System.Windows.Forms.ListView();
-            this.ilVueArbre = new System.Windows.Forms.ImageList(this.components);
-            this.ilVuePetit = new System.Windows.Forms.ImageList(this.components);
-            this.ilVueGrand = new System.Windows.Forms.ImageList(this.components);
-            this.tsSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.tsQuitter = new System.Windows.Forms.ToolStripButton();
+            this.tsSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.tsApparence = new System.Windows.Forms.ToolStripSplitButton();
             this.tsPetitesIcones = new System.Windows.Forms.ToolStripMenuItem();
             this.tsGrandesIcones = new System.Windows.Forms.ToolStripMenuItem();
             this.tsListe = new System.Windows.Forms.ToolStripMenuItem();
             this.tsDetail = new System.Windows.Forms.ToolStripMenuItem();
+            this.ssMessage = new System.Windows.Forms.StatusStrip();
+            this.slMessage = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tvRepertoire = new System.Windows.Forms.TreeView();
+            this.ilVueArbre = new System.Windows.Forms.ImageList(this.components);
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.lvFichier = new System.Windows.Forms.ListView();
             this.NOM = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TAI = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CREA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MOD = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.slMessage = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ilVueGrand = new System.Windows.Forms.ImageList(this.components);
+            this.ilVuePetit = new System.Windows.Forms.ImageList(this.components);
             this.tsCommande.SuspendLayout();
             this.ssMessage.SuspendLayout();
             this.SuspendLayout();
@@ -66,78 +66,6 @@
             this.tsCommande.TabIndex = 0;
             this.tsCommande.Text = "toolStrip1";
             // 
-            // ssMessage
-            // 
-            this.ssMessage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.slMessage});
-            this.ssMessage.Location = new System.Drawing.Point(0, 339);
-            this.ssMessage.Name = "ssMessage";
-            this.ssMessage.Size = new System.Drawing.Size(584, 22);
-            this.ssMessage.TabIndex = 1;
-            this.ssMessage.Text = "statusStrip1";
-            // 
-            // tvRepertoire
-            // 
-            this.tvRepertoire.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tvRepertoire.ImageIndex = 0;
-            this.tvRepertoire.ImageList = this.ilVueArbre;
-            this.tvRepertoire.Location = new System.Drawing.Point(0, 25);
-            this.tvRepertoire.Name = "tvRepertoire";
-            this.tvRepertoire.SelectedImageIndex = 0;
-            this.tvRepertoire.Size = new System.Drawing.Size(200, 314);
-            this.tvRepertoire.TabIndex = 2;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(200, 25);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 314);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
-            // 
-            // lvFichier
-            // 
-            this.lvFichier.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.NOM,
-            this.TAI,
-            this.CREA,
-            this.MOD});
-            this.lvFichier.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvFichier.FullRowSelect = true;
-            this.lvFichier.LargeImageList = this.ilVueGrand;
-            this.lvFichier.Location = new System.Drawing.Point(203, 25);
-            this.lvFichier.Name = "lvFichier";
-            this.lvFichier.Size = new System.Drawing.Size(381, 314);
-            this.lvFichier.TabIndex = 4;
-            this.lvFichier.UseCompatibleStateImageBehavior = false;
-            // 
-            // ilVueArbre
-            // 
-            this.ilVueArbre.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilVueArbre.ImageStream")));
-            this.ilVueArbre.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilVueArbre.Images.SetKeyName(0, "WEOrdi.bmp");
-            this.ilVueArbre.Images.SetKeyName(1, "WEFloppy.bmp");
-            this.ilVueArbre.Images.SetKeyName(2, "WERepertoire.bmp");
-            this.ilVueArbre.Images.SetKeyName(3, "WERepertoireActif.bmp");
-            this.ilVueArbre.Images.SetKeyName(4, "WEPoubelle.bmp");
-            // 
-            // ilVuePetit
-            // 
-            this.ilVuePetit.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilVuePetit.ImageStream")));
-            this.ilVuePetit.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilVuePetit.Images.SetKeyName(0, "WELVPetiteIcone.bmp");
-            // 
-            // ilVueGrand
-            // 
-            this.ilVueGrand.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilVueGrand.ImageStream")));
-            this.ilVueGrand.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilVueGrand.Images.SetKeyName(0, "WELVGrandeIcone.bmp");
-            // 
-            // tsSeparator
-            // 
-            this.tsSeparator.Name = "tsSeparator";
-            this.tsSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
             // tsQuitter
             // 
             this.tsQuitter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -147,6 +75,11 @@
             this.tsQuitter.Size = new System.Drawing.Size(23, 22);
             this.tsQuitter.Text = "toolStripButton1";
             this.tsQuitter.Click += new System.EventHandler(this.tsQuitter_Click);
+            // 
+            // tsSeparator
+            // 
+            this.tsSeparator.Name = "tsSeparator";
+            this.tsSeparator.Size = new System.Drawing.Size(6, 25);
             // 
             // tsApparence
             // 
@@ -190,6 +123,68 @@
             this.tsDetail.Text = "Détail";
             this.tsDetail.Click += new System.EventHandler(this.tsDetail_Click);
             // 
+            // ssMessage
+            // 
+            this.ssMessage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.slMessage});
+            this.ssMessage.Location = new System.Drawing.Point(0, 339);
+            this.ssMessage.Name = "ssMessage";
+            this.ssMessage.Size = new System.Drawing.Size(584, 22);
+            this.ssMessage.TabIndex = 1;
+            this.ssMessage.Text = "statusStrip1";
+            // 
+            // slMessage
+            // 
+            this.slMessage.Name = "slMessage";
+            this.slMessage.Size = new System.Drawing.Size(42, 17);
+            this.slMessage.Text = "#####";
+            // 
+            // tvRepertoire
+            // 
+            this.tvRepertoire.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tvRepertoire.ImageIndex = 0;
+            this.tvRepertoire.ImageList = this.ilVueArbre;
+            this.tvRepertoire.Location = new System.Drawing.Point(0, 25);
+            this.tvRepertoire.Name = "tvRepertoire";
+            this.tvRepertoire.SelectedImageIndex = 0;
+            this.tvRepertoire.Size = new System.Drawing.Size(200, 314);
+            this.tvRepertoire.TabIndex = 2;
+            this.tvRepertoire.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvRepertoire_AfterSelect);
+            // 
+            // ilVueArbre
+            // 
+            this.ilVueArbre.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilVueArbre.ImageStream")));
+            this.ilVueArbre.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilVueArbre.Images.SetKeyName(0, "WEOrdi.bmp");
+            this.ilVueArbre.Images.SetKeyName(1, "WEFloppy.bmp");
+            this.ilVueArbre.Images.SetKeyName(2, "WERepertoire.bmp");
+            this.ilVueArbre.Images.SetKeyName(3, "WERepertoireActif.bmp");
+            this.ilVueArbre.Images.SetKeyName(4, "WEPoubelle.bmp");
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(200, 25);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 314);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
+            // lvFichier
+            // 
+            this.lvFichier.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.NOM,
+            this.TAI,
+            this.CREA,
+            this.MOD});
+            this.lvFichier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvFichier.FullRowSelect = true;
+            this.lvFichier.LargeImageList = this.ilVueGrand;
+            this.lvFichier.Location = new System.Drawing.Point(203, 25);
+            this.lvFichier.Name = "lvFichier";
+            this.lvFichier.Size = new System.Drawing.Size(381, 314);
+            this.lvFichier.TabIndex = 4;
+            this.lvFichier.UseCompatibleStateImageBehavior = false;
+            // 
             // NOM
             // 
             this.NOM.Text = "Nom";
@@ -210,11 +205,17 @@
             this.MOD.Text = "Modification";
             this.MOD.Width = 75;
             // 
-            // slMessage
+            // ilVueGrand
             // 
-            this.slMessage.Name = "slMessage";
-            this.slMessage.Size = new System.Drawing.Size(42, 17);
-            this.slMessage.Text = "#####";
+            this.ilVueGrand.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilVueGrand.ImageStream")));
+            this.ilVueGrand.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilVueGrand.Images.SetKeyName(0, "WELVGrandeIcone.bmp");
+            // 
+            // ilVuePetit
+            // 
+            this.ilVuePetit.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilVuePetit.ImageStream")));
+            this.ilVuePetit.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilVuePetit.Images.SetKeyName(0, "WELVPetiteIcone.bmp");
             // 
             // EcranExplorateur
             // 

@@ -98,5 +98,11 @@ namespace Cours_1
             EcranExplorateur f = new EcranExplorateur();
             f.ShowDialog();
         }
+
+        private void mfBDD_Click(object sender, EventArgs e)
+        {
+            EcranBD1 f = new EcranBD1();
+            f.ShowDialog();
+        }
     }
 }

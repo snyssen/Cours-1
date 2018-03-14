@@ -38,9 +38,10 @@
             this.mefGraphique = new System.Windows.Forms.ToolStripMenuItem();
             this.mfCarnaval = new System.Windows.Forms.ToolStripMenuItem();
             this.mfClavierSouris = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfExplorateur = new System.Windows.Forms.ToolStripMenuItem();
             this.mAide = new System.Windows.Forms.ToolStripMenuItem();
             this.mQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.mfExplorateur = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfBD1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,8 @@
             this.mefGraphique,
             this.mfCarnaval,
             this.mfClavierSouris,
-            this.mfExplorateur});
+            this.mfExplorateur,
+            this.mfBD1});
             this.mFenetres.Name = "mFenetres";
             this.mFenetres.Size = new System.Drawing.Size(63, 20);
             this.mFenetres.Text = "Fenêtres";
@@ -128,6 +130,13 @@
             this.mfClavierSouris.Text = "Clavier - Souris";
             this.mfClavierSouris.Click += new System.EventHandler(this.mfClavierSouris_Click);
             // 
+            // mfExplorateur
+            // 
+            this.mfExplorateur.Name = "mfExplorateur";
+            this.mfExplorateur.Size = new System.Drawing.Size(187, 22);
+            this.mfExplorateur.Text = "Explorateur";
+            this.mfExplorateur.Click += new System.EventHandler(this.mfExplorateur_Click);
+            // 
             // mAide
             // 
             this.mAide.Name = "mAide";
@@ -144,12 +153,12 @@
             this.mQuitter.Text = "Quitter";
             this.mQuitter.Click += new System.EventHandler(this.mQuitter_Click);
             // 
-            // mfExplorateur
+            // mfBD1
             // 
-            this.mfExplorateur.Name = "mfExplorateur";
-            this.mfExplorateur.Size = new System.Drawing.Size(187, 22);
-            this.mfExplorateur.Text = "Explorateur";
-            this.mfExplorateur.Click += new System.EventHandler(this.mfExplorateur_Click);
+            this.mfBD1.Name = "mfBD1";
+            this.mfBD1.Size = new System.Drawing.Size(187, 22);
+            this.mfBD1.Text = "Base de données 1";
+            this.mfBD1.Click += new System.EventHandler(this.mfBDD_Click);
             // 
             // FicPrincipal
             // 
@@ -188,5 +197,6 @@
         private System.Windows.Forms.ToolStripMenuItem mfCarnaval;
         private System.Windows.Forms.ToolStripMenuItem mfClavierSouris;
         private System.Windows.Forms.ToolStripMenuItem mfExplorateur;
+        private System.Windows.Forms.ToolStripMenuItem mfBD1;
     }
 }
