@@ -32,6 +32,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ISET2018_CouAcces">
+      <HintPath>..\..\..\ISET2018_CouGestion\ISET2018_CouGestion\bin\Debug\ISET2018_CouAcces.dll</HintPath>
+    </Reference>
+    <Reference Include="ISET2018_CouClasses">
+      <HintPath>..\..\..\ISET2018_CouGestion\ISET2018_CouGestion\bin\Debug\ISET2018_CouClasses.dll</HintPath>
+    </Reference>
+    <Reference Include="ISET2018_CouGestion">
+      <HintPath>..\..\..\ISET2018_CouGestion\ISET2018_CouGestion\bin\Debug\ISET2018_CouGestion.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +71,18 @@
     </Compile>
     <Compile Include="FicBD1.Designer.cs">
       <DependentUpon>FicBD1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FicBD2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicBD2.Designer.cs">
+      <DependentUpon>FicBD2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FicBD3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicBD3.Designer.cs">
+      <DependentUpon>FicBD3.cs</DependentUpon>
     </Compile>
     <Compile Include="FicCarnaval.cs">
       <SubType>Form</SubType>
@@ -139,6 +160,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FicBD1.resx">
       <DependentUpon>FicBD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicBD2.resx">
+      <DependentUpon>FicBD2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicBD3.resx">
+      <DependentUpon>FicBD3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FicCarnaval.resx">
       <DependentUpon>FicCarnaval.cs</DependentUpon>
@@ -326,7 +353,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="perso.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

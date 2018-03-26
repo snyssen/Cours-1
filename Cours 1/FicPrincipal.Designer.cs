@@ -39,9 +39,11 @@
             this.mfCarnaval = new System.Windows.Forms.ToolStripMenuItem();
             this.mfClavierSouris = new System.Windows.Forms.ToolStripMenuItem();
             this.mfExplorateur = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfBD1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfBaseDeDonnees2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mAide = new System.Windows.Forms.ToolStripMenuItem();
             this.mQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.mfBD1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfBD3 = new System.Windows.Forms.ToolStripMenuItem();
             this.mMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +71,9 @@
             this.mfCarnaval,
             this.mfClavierSouris,
             this.mfExplorateur,
-            this.mfBD1});
+            this.mfBD1,
+            this.mfBaseDeDonnees2,
+            this.mfBD3});
             this.mFenetres.Name = "mFenetres";
             this.mFenetres.Size = new System.Drawing.Size(63, 20);
             this.mFenetres.Text = "Fenêtres";
@@ -137,6 +141,20 @@
             this.mfExplorateur.Text = "Explorateur";
             this.mfExplorateur.Click += new System.EventHandler(this.mfExplorateur_Click);
             // 
+            // mfBD1
+            // 
+            this.mfBD1.Name = "mfBD1";
+            this.mfBD1.Size = new System.Drawing.Size(187, 22);
+            this.mfBD1.Text = "Base de données 1";
+            this.mfBD1.Click += new System.EventHandler(this.mfBDD_Click);
+            // 
+            // mfBaseDeDonnees2
+            // 
+            this.mfBaseDeDonnees2.Name = "mfBaseDeDonnees2";
+            this.mfBaseDeDonnees2.Size = new System.Drawing.Size(187, 22);
+            this.mfBaseDeDonnees2.Text = "Base de données 2";
+            this.mfBaseDeDonnees2.Click += new System.EventHandler(this.mfBaseDeDonnees2_Click);
+            // 
             // mAide
             // 
             this.mAide.Name = "mAide";
@@ -153,12 +171,12 @@
             this.mQuitter.Text = "Quitter";
             this.mQuitter.Click += new System.EventHandler(this.mQuitter_Click);
             // 
-            // mfBD1
+            // mfBD3
             // 
-            this.mfBD1.Name = "mfBD1";
-            this.mfBD1.Size = new System.Drawing.Size(187, 22);
-            this.mfBD1.Text = "Base de données 1";
-            this.mfBD1.Click += new System.EventHandler(this.mfBDD_Click);
+            this.mfBD3.Name = "mfBD3";
+            this.mfBD3.Size = new System.Drawing.Size(187, 22);
+            this.mfBD3.Text = "Base de données 3";
+            this.mfBD3.Click += new System.EventHandler(this.mfBD3_Click);
             // 
             // FicPrincipal
             // 
@@ -198,5 +216,7 @@
         private System.Windows.Forms.ToolStripMenuItem mfClavierSouris;
         private System.Windows.Forms.ToolStripMenuItem mfExplorateur;
         private System.Windows.Forms.ToolStripMenuItem mfBD1;
+        private System.Windows.Forms.ToolStripMenuItem mfBaseDeDonnees2;
+        private System.Windows.Forms.ToolStripMenuItem mfBD3;
     }
 }

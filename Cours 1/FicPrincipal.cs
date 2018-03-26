@@ -104,5 +104,17 @@ namespace Cours_1
             EcranBD1 f = new EcranBD1();
             f.ShowDialog();
         }
+
+        private void mfBaseDeDonnees2_Click(object sender, EventArgs e)
+        {
+            EcranBD2 f = new EcranBD2();
+            f.ShowDialog();
+        }
+
+        private void mfBD3_Click(object sender, EventArgs e)
+        {
+            EcranBD3 f = new EcranBD3();
+            f.ShowDialog();
+        }
     }
 }
