@@ -28,7 +28,7 @@ namespace Cours_1
             NoeudRacine = new TreeNode("Poste de travail", 0, 0); // On se place dans le poste de travail, arguments derrière = images
             tvRepertoire.Nodes.Clear();
             tvRepertoire.Nodes.Add(NoeudRacine);
-            string[] Disques =  Environment.GetLogicalDrives(); // On récupère les disques
+            string[] Disques =  Environment.GetLogicalDrives(); // On récupère les noms des disques
             foreach(string Disque in Disques)
             {
                 TreeNode NoeudDisque = new TreeNode(Disque, 1, 1);

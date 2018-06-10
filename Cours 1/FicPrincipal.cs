@@ -116,5 +116,23 @@ namespace Cours_1
             EcranBD3 f = new EcranBD3();
             f.ShowDialog();
         }
+
+        private void dînerDePhilosophesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranDinerPhilosophes f = new EcranDinerPhilosophes();
+            f.ShowDialog();
+        }
+
+        private void expressionRégulièreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranExpressionsRegulieres f = new EcranExpressionsRegulieres();
+            f.ShowDialog();
+        }
+
+        private void intégraleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EcranIntegrale f = new EcranIntegrale();
+            f.ShowDialog();
+        }
     }
 }

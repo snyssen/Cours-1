@@ -17,17 +17,17 @@ namespace Cours_1
         private DataTable dtPersonne;
         private BindingSource bsPersonne;
         private string sChConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='C:\Users\picho\Nextcloud\Cours\Informatique\2e bac\POO\Q2\db\BD_Perso.mdf';Integrated Security=True;Connect Timeout=30";
-            public EcranBD3()
+        public EcranBD3()
         {
-            InitializeComponent();
-            RemplirDGV();
-            if (dgvPersonnes.Rows.Count > 0)
-            {
-                Activer(true);
-                dgvPersonnes.Rows[0].Selected = true;
-            }
-            else
-                Activer(false);
+        InitializeComponent();
+        RemplirDGV();
+        if (dgvPersonnes.Rows.Count > 0)
+        {
+            Activer(true);
+            dgvPersonnes.Rows[0].Selected = true;
+        }
+        else
+            Activer(false);
         }
 
         private void Activer(bool lNavigation)

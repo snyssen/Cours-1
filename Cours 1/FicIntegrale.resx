@@ -117,42 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="mMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="frequence2.Entrees" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAExJU0VUMjAxOF9NZXNDb250cm9sZXMsIFZlcnNpb249MS4wLjAu
-        MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAeSVNFVDIwMThfTWVzQ29u
-        dHJvbGVzLk1vblBvaW50AgAAAAF4AXkAAAgIAgAAAAAAAAAAAAAACw==
-</value>
-  </data>
-  <data name="frequence2.Entrees1" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAExJU0VUMjAxOF9NZXNDb250cm9sZXMsIFZlcnNpb249MS4wLjAu
-        MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAeSVNFVDIwMThfTWVzQ29u
-        dHJvbGVzLk1vblBvaW50AgAAAAF4AXkAAAgIAgAAAAEAAAABAAAACw==
-</value>
-  </data>
-  <data name="frequence2.Entrees2" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAExJU0VUMjAxOF9NZXNDb250cm9sZXMsIFZlcnNpb249MS4wLjAu
-        MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAeSVNFVDIwMThfTWVzQ29u
-        dHJvbGVzLk1vblBvaW50AgAAAAF4AXkAAAgIAgAAAAIAAAACAAAACw==
-</value>
-  </data>
-  <data name="frequence2.Entrees3" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAExJU0VUMjAxOF9NZXNDb250cm9sZXMsIFZlcnNpb249MS4wLjAu
-        MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAeSVNFVDIwMThfTWVzQ29u
-        dHJvbGVzLk1vblBvaW50AgAAAAF4AXkAAAgIAgAAAAMAAAABAAAACw==
-</value>
-  </data>
-  <data name="frequence2.Entrees4" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAExJU0VUMjAxOF9NZXNDb250cm9sZXMsIFZlcnNpb249MS4wLjAu
-        MCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAeSVNFVDIwMThfTWVzQ29u
-        dHJvbGVzLk1vblBvaW50AgAAAAF4AXkAAAgIAgAAAAUAAAAFAAAACw==
-</value>
-  </data>
 </root>

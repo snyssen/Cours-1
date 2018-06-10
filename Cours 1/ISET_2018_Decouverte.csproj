@@ -41,6 +41,9 @@
     <Reference Include="ISET2018_CouGestion">
       <HintPath>..\..\..\ISET2018_CouGestion\ISET2018_CouGestion\bin\Debug\ISET2018_CouGestion.dll</HintPath>
     </Reference>
+    <Reference Include="ISET2018_MesControles">
+      <HintPath>..\..\ISET2018_MesControles\ISET2018_MesControles\bin\Debug\ISET2018_MesControles.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +62,9 @@
     </Compile>
     <Compile Include="A_propos.Designer.cs">
       <DependentUpon>A_propos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DinerPhilosophe.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FicAccueil.cs">
       <SubType>Form</SubType>
@@ -108,6 +114,12 @@
     <Compile Include="FicExplorateur.Designer.cs">
       <DependentUpon>FicExplorateur.cs</DependentUpon>
     </Compile>
+    <Compile Include="FicExpressionsRegulieres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicExpressionsRegulieres.Designer.cs">
+      <DependentUpon>FicExpressionsRegulieres.cs</DependentUpon>
+    </Compile>
     <Compile Include="FicGraphique.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,12 @@
     </Compile>
     <Compile Include="FicHorloge.Designer.cs">
       <DependentUpon>FicHorloge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FicIntegrale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicIntegrale.Designer.cs">
+      <DependentUpon>FicIntegrale.cs</DependentUpon>
     </Compile>
     <Compile Include="FicListe.cs">
       <SubType>Form</SubType>
@@ -155,6 +173,7 @@
     <EmbeddedResource Include="A_propos.resx">
       <DependentUpon>A_propos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DinerPhilosophe.resx" />
     <EmbeddedResource Include="FicAccueil.resx">
       <DependentUpon>FicAccueil.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,11 +198,17 @@
     <EmbeddedResource Include="FicExplorateur.resx">
       <DependentUpon>FicExplorateur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FicExpressionsRegulieres.resx">
+      <DependentUpon>FicExpressionsRegulieres.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FicGraphique.resx">
       <DependentUpon>FicGraphique.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FicHorloge.resx">
       <DependentUpon>FicHorloge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicIntegrale.resx">
+      <DependentUpon>FicIntegrale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FicListe.resx">
       <DependentUpon>FicListe.cs</DependentUpon>

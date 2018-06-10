@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FicPrincipal));
             this.mMenu = new System.Windows.Forms.MenuStrip();
             this.mFenetres = new System.Windows.Forms.ToolStripMenuItem();
             this.mfProgression = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,9 +42,14 @@
             this.mfExplorateur = new System.Windows.Forms.ToolStripMenuItem();
             this.mfBD1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mfBaseDeDonnees2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mfBD3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dînerDePhilosophesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.expressionRégulièreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mAide = new System.Windows.Forms.ToolStripMenuItem();
             this.mQuitter = new System.Windows.Forms.ToolStripMenuItem();
-            this.mfBD3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.frequence2 = new ISET2018_MesControles.Frequence();
+            this.frequence1 = new ISET2018_MesControles.Frequence();
+            this.intégraleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +79,10 @@
             this.mfExplorateur,
             this.mfBD1,
             this.mfBaseDeDonnees2,
-            this.mfBD3});
+            this.mfBD3,
+            this.dînerDePhilosophesToolStripMenuItem,
+            this.expressionRégulièreToolStripMenuItem,
+            this.intégraleToolStripMenuItem});
             this.mFenetres.Name = "mFenetres";
             this.mFenetres.Size = new System.Drawing.Size(63, 20);
             this.mFenetres.Text = "Fenêtres";
@@ -155,6 +164,27 @@
             this.mfBaseDeDonnees2.Text = "Base de données 2";
             this.mfBaseDeDonnees2.Click += new System.EventHandler(this.mfBaseDeDonnees2_Click);
             // 
+            // mfBD3
+            // 
+            this.mfBD3.Name = "mfBD3";
+            this.mfBD3.Size = new System.Drawing.Size(187, 22);
+            this.mfBD3.Text = "Base de données 3";
+            this.mfBD3.Click += new System.EventHandler(this.mfBD3_Click);
+            // 
+            // dînerDePhilosophesToolStripMenuItem
+            // 
+            this.dînerDePhilosophesToolStripMenuItem.Name = "dînerDePhilosophesToolStripMenuItem";
+            this.dînerDePhilosophesToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.dînerDePhilosophesToolStripMenuItem.Text = "Dîner de philosophes";
+            this.dînerDePhilosophesToolStripMenuItem.Click += new System.EventHandler(this.dînerDePhilosophesToolStripMenuItem_Click);
+            // 
+            // expressionRégulièreToolStripMenuItem
+            // 
+            this.expressionRégulièreToolStripMenuItem.Name = "expressionRégulièreToolStripMenuItem";
+            this.expressionRégulièreToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.expressionRégulièreToolStripMenuItem.Text = "Expression régulière";
+            this.expressionRégulièreToolStripMenuItem.Click += new System.EventHandler(this.expressionRégulièreToolStripMenuItem_Click);
+            // 
             // mAide
             // 
             this.mAide.Name = "mAide";
@@ -171,18 +201,49 @@
             this.mQuitter.Text = "Quitter";
             this.mQuitter.Click += new System.EventHandler(this.mQuitter_Click);
             // 
-            // mfBD3
+            // frequence2
             // 
-            this.mfBD3.Name = "mfBD3";
-            this.mfBD3.Size = new System.Drawing.Size(187, 22);
-            this.mfBD3.Text = "Base de données 3";
-            this.mfBD3.Click += new System.EventHandler(this.mfBD3_Click);
+            this.frequence2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.frequence2.Entrees.Add(((ISET2018_MesControles.MonPoint)(resources.GetObject("frequence2.Entrees"))));
+            this.frequence2.Entrees.Add(((ISET2018_MesControles.MonPoint)(resources.GetObject("frequence2.Entrees1"))));
+            this.frequence2.Entrees.Add(((ISET2018_MesControles.MonPoint)(resources.GetObject("frequence2.Entrees2"))));
+            this.frequence2.Entrees.Add(((ISET2018_MesControles.MonPoint)(resources.GetObject("frequence2.Entrees3"))));
+            this.frequence2.Entrees.Add(((ISET2018_MesControles.MonPoint)(resources.GetObject("frequence2.Entrees4"))));
+            this.frequence2.Location = new System.Drawing.Point(0, 27);
+            this.frequence2.Name = "frequence2";
+            this.frequence2.Size = new System.Drawing.Size(284, 234);
+            this.frequence2.TabIndex = 1;
+            this.frequence2.Trait = System.Drawing.Color.Black;
+            this.frequence2.Xmax = 5;
+            this.frequence2.Xmin = 0;
+            this.frequence2.Ymax = 5;
+            this.frequence2.Ymin = 0;
+            // 
+            // frequence1
+            // 
+            this.frequence1.Location = new System.Drawing.Point(0, 0);
+            this.frequence1.Name = "frequence1";
+            this.frequence1.Size = new System.Drawing.Size(200, 100);
+            this.frequence1.TabIndex = 0;
+            this.frequence1.Trait = System.Drawing.Color.Black;
+            this.frequence1.Xmax = 100;
+            this.frequence1.Xmin = 0;
+            this.frequence1.Ymax = 100;
+            this.frequence1.Ymin = 0;
+            // 
+            // intégraleToolStripMenuItem
+            // 
+            this.intégraleToolStripMenuItem.Name = "intégraleToolStripMenuItem";
+            this.intégraleToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.intégraleToolStripMenuItem.Text = "Intégrale";
+            this.intégraleToolStripMenuItem.Click += new System.EventHandler(this.intégraleToolStripMenuItem_Click);
             // 
             // FicPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.frequence2);
             this.Controls.Add(this.mMenu);
             this.MainMenuStrip = this.mMenu;
             this.MaximizeBox = false;
@@ -218,5 +279,10 @@
         private System.Windows.Forms.ToolStripMenuItem mfBD1;
         private System.Windows.Forms.ToolStripMenuItem mfBaseDeDonnees2;
         private System.Windows.Forms.ToolStripMenuItem mfBD3;
+        private System.Windows.Forms.ToolStripMenuItem dînerDePhilosophesToolStripMenuItem;
+        private ISET2018_MesControles.Frequence frequence1;
+        private ISET2018_MesControles.Frequence frequence2;
+        private System.Windows.Forms.ToolStripMenuItem expressionRégulièreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intégraleToolStripMenuItem;
     }
 }
